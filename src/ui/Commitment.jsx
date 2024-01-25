@@ -10,17 +10,18 @@ const Commitment = () => {
             <IoFlag className="text-secondary" />
             <span>Our Commitment</span>
           </span>
-          <div className="pt-5 pb-7">
-            <div className="font-DMSefif text-5xl max-md:text-4xl text-primary pb-3">
-              Vision & Mission
+          <div className="py-5 px-4 max-sm:px-2">
+            <span className="font-DMSefif text-primary text-3xl">About Us</span>
+            <div className="pt-3 leading-normal">
+              <span className="font-Heebo500">Kalesanwa Group</span> is a socio-economic and political strategy
+              development group created with a vision to be the foremost
+              formidable political pressure group whose support for any
+              candidate and or political party would be a tremendous boost to
+              such a candidate and or political party.
             </div>
-            <p className="text-lg max-sm:text-base leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              maxime aspernatur alias odio ratione sit.
-            </p>
           </div>
         </div>
-        <div className="bg-gray py-8 px-4 max-sm:px-2">
+        <div className="bg-gray py-6 px-4 max-sm:px-2">
           <span className="font-DMSefif text-primary text-3xl">Vision</span>
           {VISIONS.map((vision) => (
             <div
@@ -37,7 +38,7 @@ const Commitment = () => {
           ))}
         </div>
       </div>
-      <div className="bg-primary text-white col-start-2 col-end-3 max-lg:col-start-1 max-lg:col-end-2 py-8 px-4 max-sm:px-2 h-fit">
+      <div className="bg-primary text-white col-start-2 col-end-3 max-lg:col-start-1 max-lg:col-end-2 py-6 px-4 max-sm:px-2 h-fit">
         <span className="font-DMSefif text-3xl">Mission</span>
         {MISSIONS.map((mission) => (
           <div

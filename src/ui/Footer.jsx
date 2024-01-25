@@ -19,12 +19,12 @@ const Footer = () => {
             <IoLogoWhatsapp />
           </div>
         </div>
-        <div className="flex max-lg:flex-wrap gap-x-10 gap-y-12 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
+        <div className="flex max-lg:flex-wrap gap-x-10 gap-y-6 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
           <div className="flex items-center gap-x-4 max-md:gap-x-2">
             <IoLocationSharp className="text-3xl text-secondary max-md:text-2xl" />
             <span>
-              34 Ridge Road, London,
-              <br /> 40341 United States
+            22 Obafemi Awolowo Rd
+              <br /> Lagos, Nigeria
             </span>
           </div>
           <div className="flex items-center gap-x-4 max-md:gap-x-2">

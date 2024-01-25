@@ -21,56 +21,54 @@ import TUC from "./assets/images/tuc.png";
 export const MISSIONS = [
   {
     id: 1,
-    title: "Economic Development",
-    text: "Parties may have missions centered around promoting economic development, job creation, and poverty alleviation. They might advocate for policies that stimulate economic growth and improve the standard of living for citizens.",
+    text: "Promote ancestral values of uprightness, selflessness, humility, and service to humanity within the group's activities.",
   },
   {
     id: 2,
-    title: "Anti-Corruption and Good Governance",
-    text: "Many political parties in Nigeria express a commitment to fighting corruption and promoting good governance. They may have missions focused on transparency, accountability, and the establishment of institutions that combat corruption.",
+    text: "Uphold the basic democratic ethos, advocating for the people's right to choose their leaders freely.",
   },
   {
     id: 3,
-    title: "Youth and Women Empowerment",
-    text: "Some political parties in Nigeria express a commitment to empowering marginalized groups, including youth and women. This can involve advocating for policies that enhance educational opportunities, economic empowerment, and political participation for these groups.",
+    text: "Focus on socio-economic, political, and developmental issues in posts and discussions.",
   },
   {
     id: 4,
-    title: "Democracy and Rule of Law",
-    text: "Political parties often emphasize their commitment to democratic principles and the rule of law. This includes advocating for freeand fair elections, protecting civil liberties, and upholding the constitutional framework.",
+    text: "Maintain a positive and respectful environment, ensuring all posts and comments align with the values of the Group and are free from insults and abuses.",
   },
   {
     id: 5,
-    title: "Representation",
-    text: "Nigerian political parties aim to represent the diverse interests and concerns of the population. They seek to articulate the needs and aspirations of their constituents, taking into account the country's cultural, ethnic, and regional diversity.",
+    text: "Encourage new members to introduce themselves with a short profile upon joining, fostering a sense of community and adherence to platform rules.",
+  },
+  {
+    id: 6,
+    text: "Hold members accountable for the content of their posts, emphasizing a duty of care to verify the validity of information shared.",
   },
 ];
 
 export const VISIONS = [
   {
     id: 1,
-    title: "Economic Prosperity",
-    text: "Parties may have a vision for a prosperous Nigeria with a strong and growing economy. This could include goals related to economic development, job creation, poverty reduction, and the equitable distribution of resources.",
+    text: "Strive to be the leading political pressure group, shaping the political landscape with substantial support for endorsed candidates and parties.",
   },
   {
     id: 2,
-    title: "Corruption-Free Society",
-    text: "Political parties often envision a Nigeria free from corruption. They may strive to establish institutions and policies that combat corruption at all levels of government and society.",
+    text: "Foster a society that embraces ancestral values, incorporating uprightness, selflessness, humility, and service to humanity.",
   },
   {
     id: 3,
-    title: "Infrastructure Development",
-    text: "The vision of political parties might include the development of robust infrastructure, such as roads, bridges, energy systems, and telecommunications, to facilitate economic growth and improve the overall quality of life for citizens.",
+    text: "Advocate for a democratic system where people have the freedom to choose their leaders based on their preferences.",
   },
   {
     id: 4,
-    title: "Educational Excellence",
-    text: "Parties may have a vision for an education system that fosters excellence and provides equal opportunities for all citizens. This could involve policies aimed at improving access to quality education and enhancing the skills of the workforce.",
+    text: "Establish the Group as a respected and influential entity in socio-economic, political, and developmental spheres.",
   },
   {
     id: 5,
-    title: "National Unity and Integration",
-    text: "Many political parties in Nigeria aim to contribute to the promotion of national unity and integration. Given the country's diverse ethnic, cultural, and religious makeup, parties may envision a Nigeria where all citizens, regardless of their background, can coexist harmoniously.",
+    text: "Create a platform where discussions are centered around important issues, contributing meaningfully to societal progress.",
+  },
+  {
+    id: 6,
+    text: "Cultivate an environment within the Group that exemplifies mutual respect, cooperation, and a shared commitment to positive engagement.",
   },
 ];
 
