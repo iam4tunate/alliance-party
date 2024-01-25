@@ -26,11 +26,11 @@ const Register = () => {
         </div>
       )}
       <div className="text-black px-8 py-12">
-        <div className="font-DMSefif text-2xl font-medium pb-2">
-          ALLIANCE POLITICAL PARTY REGISTRATION FORM
+        <div className="font-DMSefif text-2xl font-bold pb-2 uppercase text-primary">
+        kálésanwá socio-POLITICAL PARTY REGISTRATION FORM
         </div>
         <div className="pb-10 flex max-sm:flex-col text-left items-center max-sm:items-start justify-between gap-y-2">
-          <span className="text-lg max-sm:text-base font-poppinsSemibold font-Heebo500">
+          <span className="text-lg max-sm:text-base">
             Register to become a verified member
           </span>
           <Link to="/">

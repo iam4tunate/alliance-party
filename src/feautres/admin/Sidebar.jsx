@@ -1,5 +1,5 @@
 import { PiSquaresFour, PiUsers } from "react-icons/pi";
-import LOGO from "../../assets/images/logo.png";
+// import LOGO from "../../assets/images/logo.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {

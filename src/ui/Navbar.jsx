@@ -11,8 +11,8 @@ const Navbar = () => {
       </div>
       <ul className="flex items-center gap-x-10 text-lg text-dark max-lg:hidden">
         <li>Home</li>
-        <li>Program</li>
-        <li>Team</li>
+        <li>Programs</li>
+        <li>Committee</li>
         <li>News</li>
         <li>Contacts</li>
       </ul>

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import BG from "../../assets/images/campaign5.jpg";
-import LOGO from "../../assets/images/logo.png";
+import LOGO from "../../assets/images/logo.jpg";
 
 const Auth = () => {
   return (
@@ -15,9 +15,9 @@ const Auth = () => {
         className="max-lg:hidden bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center text-white text-center py-12 px-8 fixed top-0 right-0 bottom-0 w-1/2"
       >
         <div className="flex flex-col items-center">
-          <img src={LOGO} alt="" className="w-[15rem] h-[10rem] object-cover" />
-          <div className="text-4xl font-DMSefif pb-2 opacity-90 uppercase w-[90%] leading-tight">
-            Alliance Political Party Membership Registration Form
+          <img src={LOGO} alt="" className="w-[15rem] object-cover rounded-2xl" />
+          <div className="text-4xl font-DMSefif pb-2 opacity-90 uppercase w-[90%] leading-tight pt-5">
+            kálésanwá Membership Registration Form
           </div>
         </div>
       </div>
