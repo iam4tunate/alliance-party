@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: DMSerif;
+    src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+  }
+  @font-face {
+    font-family: heebo-light;
+    src: url(./assets/fonts/Heebo-Light.ttf);
+  }
+  @font-face {
+    font-family: heebo-regular;
+    src: url(./assets/fonts/Heebo-Regular.ttf);
+  }
+  @font-face {
+    font-family: heebo-medium;
+    src: url(./assets/fonts/Heebo-Medium.ttf);
+  }
+  @font-face {
+    font-family: heebo-semiBold;
+    src: url(./assets/fonts/Heebo-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: heebo-bold;
+    src: url(./assets/fonts/Heebo-Bold.ttf);
+  }
+
+  body {
+    @apply font-Heebo400 text-xl text-dark;
+  }
+}
+
+@layer utilities {
+  .maxW {
+    @apply max-w-screen-2xl mx-auto;
+  }
+  .padX {
+    @apply px-4 md:px-6 lg:px-8 xl:px-10;
+  }
+  .label {
+    @apply  pb-1;
+  }
+  .input {
+    @apply bg-gray py-3 rounded-lg outline-none text-sm px-3;
+  }
+}
