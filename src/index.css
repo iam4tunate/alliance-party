@@ -29,7 +29,7 @@
   }
 
   body {
-    @apply font-Heebo400 text-xl text-dark;
+    @apply font-Heebo400 text-xl text-dark scrollbar-hide;
   }
 }
 
