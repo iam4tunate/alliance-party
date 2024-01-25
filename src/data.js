@@ -27,22 +27,22 @@ export const MISSIONS = [
     id: 2,
     text: "Uphold the basic democratic ethos, advocating for the people's right to choose their leaders freely.",
   },
-  {
-    id: 3,
-    text: "Focus on socio-economic, political, and developmental issues in posts and discussions.",
-  },
-  {
-    id: 4,
-    text: "Maintain a positive and respectful environment, ensuring all posts and comments align with the values of the Group and are free from insults and abuses.",
-  },
-  {
-    id: 5,
-    text: "Encourage new members to introduce themselves with a short profile upon joining, fostering a sense of community and adherence to platform rules.",
-  },
-  {
-    id: 6,
-    text: "Hold members accountable for the content of their posts, emphasizing a duty of care to verify the validity of information shared.",
-  },
+  // {
+  //   id: 3,
+  //   text: "Focus on socio-economic, political, and developmental issues in posts and discussions.",
+  // },
+  // {
+  //   id: 4,
+  //   text: "Maintain a positive and respectful environment, ensuring all posts and comments align with the values of the Group and are free from insults and abuses.",
+  // },
+  // {
+  //   id: 5,
+  //   text: "Encourage new members to introduce themselves with a short profile upon joining, fostering a sense of community and adherence to platform rules.",
+  // },
+  // {
+  //   id: 6,
+  //   text: "Hold members accountable for the content of their posts, emphasizing a duty of care to verify the validity of information shared.",
+  // },
 ];
 
 export const VISIONS = [
