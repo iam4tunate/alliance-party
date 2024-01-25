@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="bg-primary h-[40rem] max-lg:h-full">
       <div className=" pt-16 pb-16 max-lg:pb-10 flex max-lg:flex-col max-lg:gap-y-12 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
         <div className="w-[45%] max-lg:w-full text-gray max-lg:padX">
-          <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5">
+          <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-snug">
             Welcome to <span className="text-secondary">kálésanwá</span> Group.
           </div>
           {/* <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-6">

@@ -45,7 +45,7 @@ const Commitment = () => {
         </span>
         <div className="py-5 px-4 max-sm:px-2">
           <span className="font-DMSefif text-primary text-3xl">About Us</span>
-          <div className="pt-3 leading-normal text-primary">
+          <div className="pt-3 leading-normal text-secondary">
             <p className="pb-2">
               <span className="font-Heebo500">The Kalesanwa Group</span> is a
               socio-economic and political strategy development organization,
