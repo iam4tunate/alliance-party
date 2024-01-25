@@ -1,7 +1,7 @@
 import { PiUsersFour } from "react-icons/pi";
 import { FaMale, FaFemale } from "react-icons/fa";
 import PASSPORT from "../../assets/images/passport.jpg";
-import OverviewBox from "./overviewBox";
+import OverviewBox from "./OverviewBox";
 
 const Overview = () => {
   return (
