@@ -5,7 +5,7 @@ const Contribute = () => {
     <div className="bg-primary py-12">
       <div className="maxW padX flex max-md:flex-col max-md:gap-y-8 items-center max-lg:items-start justify-between text-white">
         <div className="flex flex-col gap-y-4 text-5xl max-lg:text-4xl font-DMSefif w-[60%] max-md:w-[90%] max-sm:w-full">
-          <span className="leading-[1.1] max-sm:leading-[1.10]">
+          <span className="leading-[1.1] max-sm:leading-[1.19]">
             Engage and actively contribute to fortifying the strength of our
             esteemed political group.
           </span>

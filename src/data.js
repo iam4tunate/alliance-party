@@ -127,3 +127,43 @@ export const PARTNERS = [
   { id: 5, img: NUT, name: "NUT" },
   { id: 6, img: NULGE, name: "NULGE" },
 ];
+
+export const newsFeeds = [
+  {
+    id: 1,
+    img: "https://guardian.ng/wp-content/uploads/2024/01/Olayide-Adelami-556x312.jpeg",
+    title: "Ondo Assembly confirms Adelami as deputy governor",
+    url: "https://guardian.ng/news/ondo-assembly-confirms-adelami-as-deputy-governor/",
+  },
+  {
+    id: 2,
+    img: "https://guardian.ng/wp-content/uploads/2023/07/The_remains_of_buildings_lost_to_the_sea_in_Ayetoro-scaled-e1686046198185-556x312.jpg",
+    title: "Ondo govt moves to curb incessant sea incursion in Ayetoro",
+    url: "https://guardian.ng/news/ondo-govt-moves-to-curb-incessant-sea-incursion-in-ayetoro/",
+  },
+  {
+    id: 3,
+    img: "https://guardian.ng/wp-content/uploads/2023/12/1-24-556x312.jpg",
+    title: "No plan to reshuffle cabinet yet, says Ondo gov",
+    url: "https://guardian.ng/news/no-plan-to-reshuffle-cabinet-yet-says-ondo-gov/",
+  },
+  {
+    id: 4,
+    img: "https://guardian.ng/wp-content/uploads/2023/03/Amotekun-2-556x312.jpg",
+    title: "Amotekun arrests ex-convict four days after completing prison term",
+    url: "https://guardian.ng/news/amotekun-arrests-ex-convict-four-days-after-completing-prison-term/",
+  },
+  {
+    id: 5,
+    img: "https://guardian.ng/wp-content/uploads/2023/06/Lucky-Aiyedatiwa-556x312.jpg",
+    title:
+      "Ondo election: Aiyedatiwa kicks as group accuses him of certificate forgery",
+    url: "https://guardian.ng/news/ondo-election-aiyedatiwa-kicks-as-group-accuses-him-of-certificate-forgery/",
+  },
+  {
+    id: 6,
+    img: "https://guardian.ng/wp-content/uploads/2023/09/F5mlgZDWoAA5QGe-556x312.jpg",
+    title: "Late former Ondo governor Akeredolu's body arrives Nigeria",
+    url: "https://guardian.ng/news/late-former-ondo-governor-akeredolus-body-arrives-nigeria/",
+  },
+];

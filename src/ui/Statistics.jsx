@@ -21,12 +21,16 @@ const Statistics = () => {
             <span className="text-base">Registered Members</span>
           </div>
           <div className="text-center">
-            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1">36</div>
+            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1">
+              36
+            </div>
             <span className="text-base">States Covered</span>
           </div>
           <div className="text-center">
-            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1">252</div>
-            <span className="text-base">Successful Campaign</span>
+            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1">
+              252
+            </div>
+            <span className="text-base">Awards</span>
           </div>
           <div className="text-center">
             <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1 space-x-0.5">
@@ -35,11 +39,10 @@ const Statistics = () => {
             <span className="text-base">Offices Held</span>
           </div>
           <div className="text-center">
-            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1 space-x-0.5">
-              <span>80</span>
-              <span className="text-3xl">%</span>
+            <div className="text-5xl max-md:text-4xl font-Heebo600 pb-1">
+              <span>15</span>
             </div>
-            <span className="text-base">Success Rate</span>
+            <span className="text-base">years of selflessness</span>
           </div>
         </div>
       </div>

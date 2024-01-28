@@ -1,3 +1,4 @@
+import NewsFeed from "../feautres/blog/NewsFeed";
 import Commitment from "./Commitment";
 import Committee from "./Committee";
 import Contribute from "./Contribute";
@@ -11,14 +12,17 @@ import Upcoming from "./Upcoming";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Commitment />
-      <Statistics />
-      <Committee />
-      <Contribute />
-      <Partners />
-      <Upcoming />
+      <div className="relative z-10 mb-[20rem] max-md:mb-[25rem] max-sm:mb-[30rem]">
+        <Navbar />
+        <Hero />
+        <Commitment />
+        <Statistics />
+        <Committee />
+        <Contribute />
+        {/* <Partners /> */}
+        <NewsFeed />
+        <Upcoming />
+      </div>
       <Footer />
     </div>
   );

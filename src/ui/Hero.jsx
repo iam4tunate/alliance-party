@@ -14,9 +14,9 @@ const Hero = () => {
   const nextRef = useRef(null);
   return (
     <div className="bg-primary h-[40rem] max-lg:h-full">
-      <div className=" pt-16 pb-16 max-lg:pb-10 flex max-lg:flex-col max-lg:gap-y-12 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
-        <div className="w-[45%] max-lg:w-full text-gray max-lg:padX">
-          <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1]">
+      <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
+        <div className="w-[45%] max-lg:pt-16 max-lg:w-full text-gray max-lg:padX">
+          <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1] max-sm:leading-[1.08]">
             Welcome to <span className="text-secondary">kálésanwá</span> Group.
           </div>
           <p className="text-xl max-sm:text-lg font-Heebo300">
@@ -25,7 +25,7 @@ const Hero = () => {
             parties for significant advancement.
           </p>
           <Link to="/auth/register">
-            <button className="bg-secondary text-white px-10 py-4 mt-7 font-Heebo500 uppercase outline-none">
+            <button className="bg-secondary text-white px-6 py-4 mt-6 text-lg font-Heebo500 uppercase outline-none">
               Become a member
             </button>
           </Link>

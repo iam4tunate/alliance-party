@@ -1,20 +1,34 @@
 import { BsArrowRight } from "react-icons/bs";
+import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import LOGO from '../assets/images/logo.jpg'
+import LOGO from "../assets/images/logo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="maxW padX flex items-stretch justify-between h-20">
+    <div id="home" className="maxW padX flex items-stretch justify-between h-20">
       <div className="font-DMSefif text-2xl max-sm:text-xl font-bold text-primary self-center">
-        <img src={LOGO} alt="" className="w-[8rem] object-cover"/>
+        <img src={LOGO} alt="" className="w-[8rem] object-cover" />
       </div>
-      <ul className="flex items-center gap-x-10 text-lg text-dark max-lg:hidden">
-        <li>Home</li>
-        <li>Programs</li>
-        <li>Committee</li>
-        <li>News</li>
-        <li>Contacts</li>
+      <ul className="flex items-center gap-x-10 text-base text-dark max-lg:hidden uppercase">
+        <Scroll to="home" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Home</li>
+        </Scroll>
+        <Scroll to="commitment" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Our Commitment</li>
+        </Scroll>
+        {/* <Scroll to="events" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Events</li>
+        </Scroll> */}
+        <Scroll to="committee" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Committee</li>
+        </Scroll>
+        <Scroll to="#" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">News</li>
+        </Scroll>
+        <Scroll to="contact" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Contacts</li>
+        </Scroll>
       </ul>
       <div className="flex items-center">
         <IoMenu className="text-3xl lg:hidden text-primary" />

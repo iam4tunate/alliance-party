@@ -15,7 +15,7 @@ const Auth = () => {
         className="max-lg:hidden bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center text-white text-center py-12 px-8 fixed top-0 right-0 bottom-0 w-1/2"
       >
         <div className="flex flex-col items-center">
-          <img src={LOGO} alt="" className="w-[15rem] object-cover rounded-2xl" />
+          <img src={LOGO} alt="" className="w-[10rem] object-cover rounded-2xl" />
           <div className="text-4xl font-DMSefif pb-2 opacity-90 uppercase w-[90%] leading-tight pt-5">
             kálésanwá Membership Registration Form
           </div>

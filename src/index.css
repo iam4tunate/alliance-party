@@ -28,6 +28,10 @@
     src: url(./assets/fonts/Heebo-Bold.ttf);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-Heebo400 text-xl text-dark scrollbar-hide;
   }
@@ -41,7 +45,7 @@
     @apply px-4 md:px-6 lg:px-8 xl:px-10;
   }
   .label {
-    @apply  pb-1;
+    @apply pb-1;
   }
   .input {
     @apply bg-gray py-3 rounded-lg outline-none text-sm px-3;

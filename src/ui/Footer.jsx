@@ -5,8 +5,8 @@ import LOGO from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary pt-16">
-      <div className="maxW padX grid grid-cols-[1fr_4fr] max-sm:grid-cols-1 items-center gap-x-12 gap-y-12">
+    <footer className="bg-primary h-[20rem] max-md:h-[25rem] max-sm:h-[30rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
+      <div className="w-full maxW padX grid grid-cols-[1fr_4fr] max-sm:grid-cols-1 items-center gap-x-12 gap-y-12">
         <div className="space-y-2">
           <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
           <div className="flex items-center text-gray opacity-80 text-3xl gap-x-4">
@@ -16,21 +16,21 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex max-lg:flex-wrap gap-x-10 gap-y-6 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
-          <div className="flex items-center gap-x-4 max-md:gap-x-2">
+          <div className="flex items-center gap-x-2">
             <IoLocationSharp className="text-3xl text-secondary max-md:text-2xl" />
             <span>
-            22 Obafemi Awolowo Rd
-              <br /> Lagos, Nigeria
+              22 Obafemi Awolowo Rd,
+              <br /> Ado-Ekiti, Nigeria
             </span>
           </div>
-          <div className="flex items-center gap-x-4 max-md:gap-x-2">
+          <div className="flex items-center gap-x-2">
             <FaPhone className="text-3xl text-secondary max-md:text-2xl" />
             <div className="flex flex-col">
               <span className="">+123 9608224266</span>
               <span className="">+123 9608224266</span>
             </div>
           </div>
-          <div className="flex items-center gap-x-4 max-md:gap-x-2">
+          <div className="flex items-center gap-x-2">
             <IoMail className="text-3xl text-secondary max-md:text-2xl" />
             <div className="flex flex-col">
               <span className="">kalesanwa.com.com</span>
@@ -58,11 +58,12 @@ const Footer = () => {
           </div>
         </div> */}
       </div>
-      <hr className="text-gray opacity-20 mt-10" />
-      <div className="flex items-center justify-center text-sm py-6 padX">
-        <span className="text-gray text-center">
-          2024 © kálésanwá Group - Nigeria. Designed by CubeHub (08012345678)
+      <hr className="text-gray opacity-20 my-10" />
+      <div className="flex flex-col gap-y-1 items-center justify-center text-gray text-center opacity-80 text-sm py-6 padX absolute bottom-0 left-0 right-0">
+        <span className="">
+          2024 © kálésanwá Group - Nigeria.
         </span>
+        <span> Designed by CubeHub (08012345678)</span>
       </div>
     </footer>
   );
