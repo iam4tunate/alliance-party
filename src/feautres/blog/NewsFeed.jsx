@@ -16,7 +16,7 @@ const NewsFeed = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div id="committee" className="bg-white">
+    <div id="blog" className="bg-white">
       <div className="maxW padX py-20 max-sm:py-16">
         <div className="text-center flex flex-col items-center pb-12">
           <div className="font-DMSefif text-4xl max-sm:text-3xl  text-primary">
