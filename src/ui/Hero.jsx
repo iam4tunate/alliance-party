@@ -58,7 +58,7 @@ const Hero = () => {
                       alt="party activity"
                       className="h-[100%] w-full object-cover"
                     />
-                    <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-3 text-white space-y-5">
+                    <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-4 text-white space-y-5">
                       <div className="bg-white bg-opacity-80 text-primary w-fit px-4 py-1 text-base max-sm:text-sm mb-4">
                         News Feed
                       </div>
