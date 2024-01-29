@@ -1,9 +1,10 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { newsFeeds } from "../data";
 import "swiper/css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   // eslint-disable-next-line no-unused-vars
@@ -14,8 +15,8 @@ const Hero = () => {
   const nextRef = useRef(null);
   return (
     <div className="bg-primary max-lg:h-full max-lg:pb-10">
-      <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
-        <div className="w-[45%] max-lg:pt-16 max-lg:w-full text-gray max-lg:padX">
+      <div className="relative flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
+        <div className="w-[45%] h-full max-lg:pt-16 max-lg:w-full text-gray max-lg:padX">
           <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1] max-sm:leading-[1.08]">
             Welcome to <span className="text-secondary">kálésanwá</span> Group.
           </div>
@@ -29,6 +30,24 @@ const Hero = () => {
               Become a member
             </button>
           </Link>
+          <div className="z-20 absolute max-lg:relative max-lg:hidden bottom-10 right-1/2 flex items-center gap-x-4">
+            <div
+              ref={prevRef}
+              className={`${
+                isBegin && "opacity-40"
+              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            >
+              <FaArrowLeft className="text-secondary" />
+            </div>
+            <div
+              ref={nextRef}
+              className={`${
+                isEnd && "opacity-40"
+              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            >
+              <FaArrowRight className="text-secondary" />
+            </div>
+          </div>
         </div>
         <div className="w-[50%] max-lg:w-full">
           <Swiper
@@ -38,11 +57,7 @@ const Hero = () => {
               setIsBegin(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
             }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation]}
             onInit={() => setInit(true)}
             navigation={{
               prevEl: prevRef.current,
@@ -71,6 +86,24 @@ const Hero = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="z-20 w-fit ml-auto lg:hidden flex items-center gap-x-4 mt-4 mr-4">
+            <div
+              ref={prevRef}
+              className={`${
+                isBegin && "opacity-40"
+              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            >
+              <FaArrowLeft className="text-secondary" />
+            </div>
+            <div
+              ref={nextRef}
+              className={`${
+                isEnd && "opacity-40"
+              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            >
+              <FaArrowRight className="text-secondary" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
