@@ -20,7 +20,7 @@ const Home = () => {
         <Committee />
         <Contribute />
         {/* <Partners /> */}
-        <NewsFeed />
+        {/* <NewsFeed /> */}
         <Upcoming />
       </div>
       <Footer />

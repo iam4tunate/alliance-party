@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { HERO_IMAGES } from "../data";
+import { newsFeeds } from "../data";
 import "swiper/css";
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div className="bg-primary h-[40rem] max-lg:h-full">
+    <div className="bg-primary max-lg:h-full max-lg:pb-10">
       <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
         <div className="w-[45%] max-lg:pt-16 max-lg:w-full text-gray max-lg:padX">
           <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1] max-sm:leading-[1.08]">
@@ -49,13 +49,25 @@ const Hero = () => {
               nextEl: nextRef.current,
             }}
           >
-            {HERO_IMAGES.map((img) => (
-              <SwiperSlide key={img.id} className="">
-                <img
-                  src={img.img}
-                  alt="party activity"
-                  className="h-[40rem] max-lg:h-[25rem] max-sm:h-[15rem] w-full object-cover"
-                />
+            {newsFeeds.map((feed) => (
+              <SwiperSlide key={feed.id} className="">
+                <Link to={feed.url} target="_blank" rel="noopener noreferrer">
+                  <div className="relative h-[40rem] max-lg:h-full max-sm:h-[25rem] max-lg:pb-10 max-sm:pb-6">
+                    <img
+                      src={feed.img}
+                      alt="party activity"
+                      className="h-[100%] w-full object-cover"
+                    />
+                    <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-3 text-white space-y-5">
+                      <div className="bg-white bg-opacity-80 text-primary w-fit px-4 py-1 text-base max-sm:text-sm mb-4">
+                        News Feed
+                      </div>
+                      <span className=" text-4xl max-md:text-2xl font-Heebo300 max-md:font-Heebo400 tracking-normal">
+                        {feed.title}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

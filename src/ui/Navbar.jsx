@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div
       id="home"
-      className="maxW padX flex items-stretch justify-between h-20"
+      className="maxW padX flex items-stretch justify-between h-[4.2rem]"
     >
       <div className="font-DMSefif text-2xl max-sm:text-xl font-bold text-primary self-center">
         <img src={LOGO} alt="" className="w-[8rem] object-cover" />
