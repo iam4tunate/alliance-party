@@ -22,14 +22,11 @@ const Navbar = () => {
             Our Commitment
           </li>
         </Scroll>
-        <Scroll to="events" spy={true}>
-          <li className="cursor-pointer hover:text-secondary">Events</li>
-        </Scroll>
-        <Scroll to="blog" spy={true}>
-          <li className="cursor-pointer hover:text-secondary">News</li>
-        </Scroll>
         <Scroll to="committee" spy={true}>
           <li className="cursor-pointer hover:text-secondary">Committee</li>
+        </Scroll>
+        <Scroll to="events" spy={true}>
+          <li className="cursor-pointer hover:text-secondary">Events</li>
         </Scroll>
       </ul>
       <div className="flex items-center">

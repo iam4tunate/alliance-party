@@ -49,6 +49,7 @@ const NewsFeed = () => {
                 setIsBegin(swiper.isBeginning);
                 setIsEnd(swiper.isEnd);
               }}
+              
               modules={[Navigation]}
               onInit={() => setInit(true)}
               navigation={{

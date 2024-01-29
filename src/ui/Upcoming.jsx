@@ -3,7 +3,7 @@ import { IoLocationSharp, IoTime } from "react-icons/io5";
 const Upcoming = () => {
   return (
     <div id="events" className="bg-gray">
-      <div className="maxW padX py-16">
+      <div className="maxW padX py-20 max-sm:py-16">
         <div className="text-center flex flex-col items-center pb-10">
           <div className="font-DMSefif text-[40px] max-sm:text-3xl text-primary">
             Upcoming Activities & Events

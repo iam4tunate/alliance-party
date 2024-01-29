@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { newsFeeds } from "../data";
 import "swiper/css";
@@ -14,9 +14,9 @@ const Hero = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div className="bg-primary max-lg:h-full max-lg:pb-10">
-      <div className="relative flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10">
-        <div className="w-[45%] h-full max-lg:pt-16 max-lg:w-full text-gray max-lg:padX">
+    <div className="relative bg-primary max-lg:h-full max-lg:pb-16">
+      <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10 max-lg:padX">
+        <div className="w-[45%] h-full max-lg:pt-16 max-lg:w-full text-gray">
           <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1] max-sm:leading-[1.08]">
             Welcome to <span className="text-secondary">kálésanwá</span> Group.
           </div>
@@ -30,23 +30,23 @@ const Hero = () => {
               Become a member
             </button>
           </Link>
-          <div className="z-20 absolute max-lg:relative max-lg:hidden bottom-10 right-1/2 flex items-center gap-x-4">
-            <div
-              ref={prevRef}
-              className={`${
-                isBegin && "opacity-40"
-              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
-            >
-              <FaArrowLeft className="text-secondary" />
-            </div>
-            <div
-              ref={nextRef}
-              className={`${
-                isEnd && "opacity-40"
-              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
-            >
-              <FaArrowRight className="text-secondary" />
-            </div>
+        </div>
+        <div className="z-20 w-fit absolute bottom-8 max-lg:bottom-2 right-1/2 max-lg:right-4 max-lg:py-4 flex items-center gap-x-3 2xl:mr-4">
+          <div
+            ref={prevRef}
+            className={`${
+              isBegin && "opacity-30"
+            } opacity-80 border border-white h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
+          >
+            <FaArrowLeft className="text-white text-lg" />
+          </div>
+          <div
+            ref={nextRef}
+            className={`${
+              isEnd && "opacity-30"
+            } opacity-80 border border-white h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
+          >
+            <FaArrowRight className="text-white text-lg" />
           </div>
         </div>
         <div className="w-[50%] max-lg:w-full">
@@ -57,7 +57,11 @@ const Hero = () => {
               setIsBegin(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
             }}
-            modules={[Navigation]}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            modules={[Navigation, Autoplay]}
             onInit={() => setInit(true)}
             navigation={{
               prevEl: prevRef.current,
@@ -67,17 +71,17 @@ const Hero = () => {
             {newsFeeds.map((feed) => (
               <SwiperSlide key={feed.id} className="">
                 <Link to={feed.url} target="_blank" rel="noopener noreferrer">
-                  <div className="relative h-[40rem] max-lg:h-full max-sm:h-[25rem] max-lg:pb-10 max-sm:pb-6">
+                  <div className="relative h-[40rem] max-lg:h-[35rem] max-sm:h-[25rem] ">
                     <img
                       src={feed.img}
                       alt="party activity"
-                      className="h-[100%] w-full object-cover"
+                      className="h-full w-full object-cover"
                     />
-                    <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-4 text-white space-y-5">
-                      <div className="bg-white bg-opacity-80 text-primary w-fit px-4 py-1 text-base max-sm:text-sm mb-4">
-                        News Feed
+                    <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-80 px-3 py-6 max-sm:py-4 text-white space-y-5">
+                      <div className="bg-white bg-opacity-80 text-primary w-fit px-2 py-1 text-base max-sm:text-sm mb-4">
+                        {feed.category}
                       </div>
-                      <span className=" text-4xl max-md:text-2xl font-Heebo300 max-md:font-Heebo400 tracking-normal">
+                      <span className=" text-3xl max-md:text-2xl max-sm:text-xl font-Heebo300 max-md:font-Heebo400 tracking-normal">
                         {feed.title}
                       </span>
                     </div>
@@ -86,24 +90,6 @@ const Hero = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="z-20 w-fit ml-auto lg:hidden flex items-center gap-x-4 mt-4 mr-4">
-            <div
-              ref={prevRef}
-              className={`${
-                isBegin && "opacity-40"
-              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
-            >
-              <FaArrowLeft className="text-secondary" />
-            </div>
-            <div
-              ref={nextRef}
-              className={`${
-                isEnd && "opacity-40"
-              } bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
-            >
-              <FaArrowRight className="text-secondary" />
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Committee = () => {
             ref={prevRef}
             className={`${
               isBegin && "hidden"
-            } z-10 absolute top-1/2 left-0 -translate-x-5 max-lg:-translate-x-0 bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            } opacity-80 z-10 absolute top-1/2 left-0 -translate-x-5 max-lg:-translate-x-0 bg-gray h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
           >
             <FaArrowLeft className="text-secondary opacity-80" />
           </div>
@@ -35,7 +35,7 @@ const Committee = () => {
             ref={nextRef}
             className={`${
               isEnd && "hidden"
-            } z-10 absolute top-1/2 right-0 translate-x-5 max-lg:translate-x-0 bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            } opacity-80 z-10 absolute top-1/2 right-0 translate-x-5 max-lg:translate-x-0 bg-gray h-10 w-10 rounded-full flex items-center justify-center cursor-pointer shadow`}
           >
             <FaArrowRight className="text-secondary opacity-80" />
           </div>
