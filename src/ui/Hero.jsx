@@ -36,17 +36,17 @@ const Hero = () => {
             ref={prevRef}
             className={`${
               isBegin && "opacity-30"
-            } opacity-80 border border-white h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            } opacity- border border-gray h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
           >
-            <FaArrowLeft className="text-white text-lg" />
+            <FaArrowLeft className="text-gray text-lg" />
           </div>
           <div
             ref={nextRef}
             className={`${
               isEnd && "opacity-30"
-            } opacity-80 border border-white h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
+            } opacity- border border-gray h-8 w-8 rounded-full flex items-center justify-center cursor-pointer shadow`}
           >
-            <FaArrowRight className="text-white text-lg" />
+            <FaArrowRight className="text-gray text-lg" />
           </div>
         </div>
         <div className="w-[50%] max-lg:w-full">

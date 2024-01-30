@@ -1,23 +1,3 @@
-import CAMPAIGN1 from "./assets/images/campaign1.jpg";
-import CAMPAIGN2 from "./assets/images/campaign2.jpg";
-import CAMPAIGN3 from "./assets/images/campaign3.jpg";
-import CAMPAIGN4 from "./assets/images/campaign4.jpg";
-import CAMPAIGN5 from "./assets/images/campaign5.jpg";
-
-import COMMITTEE1 from "./assets/images/committee1.jpg";
-import COMMITTEE2 from "./assets/images/committee2.jpeg";
-import COMMITTEE3 from "./assets/images/committee3.jpg";
-import COMMITTEE4 from "./assets/images/committee4.jpeg";
-import COMMITTEE5 from "./assets/images/committee5.jpeg";
-import COMMITTEE6 from "./assets/images/committee6.jpeg";
-
-import NLC from "./assets/images/nlc.png";
-import NMA from "./assets/images/nma.png";
-import NULGE from "./assets/images/nulge.png";
-import NURTW from "./assets/images/nurtw.png";
-import NUT from "./assets/images/nut.png";
-import TUC from "./assets/images/tuc.png";
-
 export const MISSIONS = [
   {
     id: 1,
@@ -72,60 +52,43 @@ export const VISIONS = [
   },
 ];
 
-export const HERO_IMAGES = [
-  { id: 1, img: CAMPAIGN1 },
-  { id: 2, img: CAMPAIGN2 },
-  { id: 3, img: CAMPAIGN3 },
-  { id: 4, img: CAMPAIGN4 },
-  { id: 5, img: CAMPAIGN5 },
-];
-
 export const COMMITTEES = [
   {
     id: 1,
-    img: COMMITTEE1,
+    // img: COMMITTEE1,
     name: "Barr. Julius Abure",
     position: "National Chairman",
   },
   {
     id: 2,
-    img: COMMITTEE2,
+    // img: COMMITTEE2,
     name: "Hon. Umar Faruk Ibrahim",
     position: "National Secetary",
   },
   {
     id: 3,
-    img: COMMITTEE3,
+    // img: COMMITTEE3,
     name: "Comr. Ladi Iliya",
     position: "Deputy National Chairman",
   },
   {
     id: 4,
-    img: COMMITTEE5,
+    // img: COMMITTEE5,
     name: "Clement Ojukwu",
     position: "National Organizing Secetary",
   },
   {
     id: 5,
-    img: COMMITTEE6,
+    // img: COMMITTEE6,
     name: "Oluchukwu Oparah",
     position: "National Treasure",
   },
   {
     id: 6,
-    img: COMMITTEE4,
+    // img: COMMITTEE4,
     name: "Dudu Mamman Manuga",
     position: "National Women Leader",
   },
-];
-
-export const PARTNERS = [
-  { id: 1, img: NLC, name: "NLC" },
-  { id: 2, img: NMA, name: "NMA" },
-  { id: 3, img: NURTW, name: "NURTW" },
-  { id: 4, img: TUC, name: "TUC" },
-  { id: 5, img: NUT, name: "NUT" },
-  { id: 6, img: NULGE, name: "NULGE" },
 ];
 
 export const newsFeeds = [

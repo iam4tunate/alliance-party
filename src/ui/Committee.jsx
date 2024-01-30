@@ -17,7 +17,7 @@ const Committee = () => {
   return (
     <div id="committee" className="bg-white">
       <div className="maxW padX py-20 max-sm:py-16">
-        <div className="text-center flex flex-col items-center pb-12">
+        <div className="text-center flex flex-col items-center pb-16">
           <div className="font-DMSefif text-4xl max-sm:text-3xl  text-primary">
             Kálésanwá National Committee
           </div>
@@ -42,7 +42,7 @@ const Committee = () => {
           <div className="">
             <Swiper
               slidesPerView={1}
-              spaceBetween={20}
+              spaceBetween={30}
               className="mySwiper"
               onSlideChange={(swiper) => {
                 setIsBegin(swiper.isBeginning);
@@ -68,9 +68,9 @@ const Committee = () => {
             >
               {COMMITTEES.map((comm) => (
                 <SwiperSlide key={comm.id}>
-                  <div className="">
+                  <div className="bg-gray">
                     <img src={PLACEHOLDER} alt="atiku" className="" />
-                    <div className="flex flex-col text-center pt-2">
+                    <div className="flex flex-col text-center py-2">
                       <span className="font-Heebo500">{comm.name}</span>
                       <span className="text-sm">{comm.position}</span>
                     </div>
