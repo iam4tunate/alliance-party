@@ -1,10 +1,12 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { newsFeeds } from "../data";
 import "swiper/css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import BG from "../assets/images/heroBg.jpg";
+import axios from "axios";
 
 const Hero = () => {
   // eslint-disable-next-line no-unused-vars
@@ -13,6 +15,31 @@ const Hero = () => {
   const [isEnd, setIsEnd] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+
+  const [articles, setArticles] = useState([]);
+  console.log(articles);
+  const getArticles = async () => {
+    try {
+      const res = await axios.get("http://localhost:4000/");
+      setArticles(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getArticles();
+  }, []);
+
+  function extractSRC(htmlString) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, "text/html");
+
+    // Extract the src attribute value
+    const srcValue = doc.querySelector("img").getAttribute("src");
+    return srcValue;
+  }
+
   return (
     <div className="relative bg-primary max-lg:h-full max-lg:pb-16">
       <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10 max-lg:padX">
@@ -68,21 +95,21 @@ const Hero = () => {
               nextEl: nextRef.current,
             }}
           >
-            {newsFeeds.map((feed) => (
-              <SwiperSlide key={feed.id} className="">
-                <Link to={feed.url} target="_blank" rel="noopener noreferrer">
-                  <div className="relative h-[40rem] max-lg:h-[35rem] max-sm:h-[25rem] ">
+            {articles.map((feed) => (
+              <SwiperSlide key={feed.item.title} className="">
+                <Link to={feed.item.link} target="_blank" rel="noopener noreferrer">
+                  <div className="relative h-[35rem] max-lg:h-[35rem] max-sm:h-[25rem]">
                     <img
-                      src={feed.img}
+                      src={extractSRC(feed.item.content)}
                       alt="party activity"
-                      className="h-full w-full object-cover"
+                      className="h-[35rem] max-lg:h-[35rem] max-sm:h-[25rem] w-full object-cover"
                     />
                     <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-80 px-3 py-6 max-sm:py-4 text-white space-y-5">
                       <div className="bg-white bg-opacity-80 text-primary w-fit px-2 py-1 text-base max-sm:text-sm mb-4">
-                        {feed.category}
+                        {/* {feed.category} */}
                       </div>
                       <span className=" text-3xl max-md:text-2xl max-sm:text-xl font-Heebo300 max-md:font-Heebo400 tracking-normal">
-                        {feed.title}
+                        {feed.item.title}
                       </span>
                     </div>
                   </div>
