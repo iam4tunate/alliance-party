@@ -9,7 +9,7 @@ const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
   const [articles, setArticles] = useState([]);
   const getArticles = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/");
+      const res = await axios.get(process.env.PORT || "http://localhost:4000/");
       setArticles(res.data);
     } catch (error) {
       console.log(error);
