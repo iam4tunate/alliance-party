@@ -4,50 +4,22 @@ import { Navigation, Autoplay } from "swiper/modules";
 import axios from "axios";
 import "swiper/css";
 import { Link } from "react-router-dom";
+import * as parseXml from "xml2js";
 
 const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
   const [articles, setArticles] = useState([]);
-  // console.log(articles)
-  // const getArticles = async () => {
-  //   try {
-  //     const res = await axios.get("http://localhost:4000/");
-  //     setArticles(res.data);
-  //   } catch (error) {
-  //     return <div className="text-white text-4xl">{error.message}</div>;
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getArticles();
-  // }, []);
-  const [data, setData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const getArticles = async () => {
       try {
-        const response = await fetch(
-          "https://www.premiumtimesng.com/tag/all-progressives-congress-apc/feed"
-        );
-        const xmlText = await response.text();
-
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(xmlText, "application/xml");
-
-        // Now you can access and manipulate the XML data using xmlDoc
-        // For example, if your XML structure has a root element named 'root':
-        const rootElement = xmlDoc.getElementsByTagName("root")[0];
-        // Access other elements and attributes as needed
-
-        setData(rootElement);
+        const res = await axios.get("http://localhost:4000/");
+        setArticles(res.data);
       } catch (error) {
-        console.error("Error fetching XML data:", error);
+        return <div className="text-white text-4xl">{error.message}</div>;
       }
     };
-
-    fetchData();
+    getArticles();
   }, []);
-
-  console.log(data);
 
   function extractSRC(htmlString) {
     const parser = new DOMParser();
