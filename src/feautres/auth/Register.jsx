@@ -26,8 +26,8 @@ const Register = () => {
         </div>
       )}
       <div className="text-black px-8 py-12">
-        <div className="font-DMSefif text-2xl font-bold pb-2 uppercase text-primary">
-        kálésanwá socio-POLITICAL PARTY REGISTRATION FORM
+        <div className="font-Heebo600 text-center text-2xl font-bold pb-2 uppercase text-primary">
+        kálésanwá socio-POLITICAL Group REGISTRATION FORM
         </div>
         <div className="pb-10 flex max-sm:flex-col text-left items-center max-sm:items-start justify-between gap-y-2">
           <span className="text-lg max-sm:text-base">

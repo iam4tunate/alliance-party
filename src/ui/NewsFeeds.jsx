@@ -9,10 +9,10 @@ const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
   const [articles, setArticles] = useState([]);
   const getArticles = async () => {
     try {
-      const res = await axios.get(import.meta.env.PORT || "http://localhost:4000/");
+      const res = await axios.get("http://localhost:4000/");
       setArticles(res.data);
     } catch (error) {
-      console.log(error);
+      return <div className="text-white text-4xl">{error.message}</div>;
     }
   };
 
@@ -63,7 +63,7 @@ const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
                   alt="party activity"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-4 text-white space-y-5">
+                <div className="absolute right-0 left-0 bottom-0 bg-dark bg-opacity-90 px-3 py-6 max-sm:py-4 text-gray opacity-90 space-y-5">
                   <div className="text-sm uppercase mb-4">
                     {formatDate(feed.item.pubDate)}
                   </div>
