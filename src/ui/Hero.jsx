@@ -14,7 +14,7 @@ const Hero = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="relative bg-primary h-[35rem] max-lg:h-full max-lg:pb-16">
+    <div className="relative bg-primary h-[35rem] max-lg:h-full max-lg:pb-16 flex items-center">
       <div className="flex max-lg:flex-col max-lg:gap-y-16 items-center justify-between max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10 max-lg:padX">
         <div className="w-[45%] h-full max-lg:pt-16 max-lg:w-full text-gray">
           <div className="font-DMSefif text-7xl max-lg:text-6xl max-sm:text-5xl pb-5 leading-[1.1] max-sm:leading-[1.08]">
