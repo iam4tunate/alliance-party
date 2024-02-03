@@ -15,12 +15,11 @@ const NewsFeeds = ({
   setArticles,
 }) => {
   const [isLoading, setLoading] = useState(false);
-  const server = "https://kalesanwa-server.vercel.app/";
   useEffect(() => {
     const getArticles = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(server);
+        const res = await axios.get("https://kalesanwa-server.vercel.app/");
         setArticles(res.data);
         setLoading(false);
       } catch (error) {
@@ -30,7 +29,7 @@ const NewsFeeds = ({
       }
     };
     getArticles();
-  }, [server]);
+  }, []);
 
   function extractSRC(htmlString) {
     const parser = new DOMParser();
