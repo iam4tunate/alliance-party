@@ -15,21 +15,43 @@ const NewsFeeds = ({
   setArticles,
 }) => {
   const [isLoading, setLoading] = useState(false);
+
   useEffect(() => {
-    const getArticles = async () => {
+    const fetchData = async () => {
       try {
-        setLoading(true);
-        const res = await axios.get("https://kalesanwa-server.vercel.app/");
-        setArticles(res.data);
-        setLoading(false);
+        setLoading(true)
+        const response = await fetch("https://kalesanwa-server.vercel.app/");
+        // Check if the request was successful (status code 200-299)
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const result = await response.json();
+        setArticles(result);
       } catch (error) {
-        //? *****************************Find solution to this error
-        console.log(error.message);
-        // setLoading(false);
+        setError(error.message);
+      } finally {
+        setLoading(false);
       }
     };
-    getArticles();
+
+    fetchData();
   }, []);
+
+  // useEffect(() => {
+  //   const getArticles = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const res = await axios.get("https://kalesanwa-server.vercel.app/");
+  //       setArticles(res.data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       //? *****************************Find solution to this error
+  //       console.log(error.message);
+  //       // setLoading(false);
+  //     }
+  //   };
+  //   getArticles();
+  // }, []);
 
   function extractSRC(htmlString) {
     const parser = new DOMParser();
