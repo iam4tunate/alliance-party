@@ -1,5 +1,6 @@
 import RSSParser from "rss-parser";
 import express from "express";
+import cors from "cors";
 
 const feedURL =
   "https://www.premiumtimesng.com/tag/all-progressives-congress-apc/feed";
