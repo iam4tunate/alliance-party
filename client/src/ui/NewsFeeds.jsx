@@ -50,11 +50,13 @@ const NewsFeeds = ({
 
   return (
     <div className="relative">
-      <div className="absolute top-0 left-0 bg-dark z-20 py-1.5 px-3.5 bg-opacity-70 w-fit">
-        <span className="font-DMSefif text-xl max-md:text-lg text-gray uppercase">
-          News feeds
-        </span>
-      </div>
+      {articles.length > 0 && (
+        <div className="absolute top-0 left-0 bg-dark z-20 py-1.5 px-3.5 bg-opacity-70 w-fit">
+          <span className="font-DMSefif text-xl max-md:text-lg text-gray uppercase">
+            News feeds
+          </span>
+        </div>
+      )}
       <Swiper
         slidesPerView={1}
         className="mySwiper"
