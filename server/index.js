@@ -16,13 +16,10 @@ const parse = async (url) => {
 parse(feedURL);
 
 let app = express();
-app.use(cors());
+// app.use(cors());
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send(articles);
 });
 
-const port = 4000;
-const server = app.listen(port);
-
-export default server;
+app.listen(4000);
