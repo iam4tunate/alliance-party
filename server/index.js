@@ -1,5 +1,4 @@
 import RSSParser from "rss-parser";
-import cors from "cors";
 import express from "express";
 
 const feedURL =
@@ -15,9 +14,7 @@ const parse = async (url) => {
 };
 parse(feedURL);
 
-let app = express();
-// app.use(cors());
-
+let app = express()
 app.use("/", (req, res) => {
   res.send(articles);
 });

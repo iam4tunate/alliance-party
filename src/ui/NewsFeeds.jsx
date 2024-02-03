@@ -4,7 +4,6 @@ import { Navigation, Autoplay } from "swiper/modules";
 import axios from "axios";
 import "swiper/css";
 import { Link } from "react-router-dom";
-import * as parseXml from "xml2js";
 
 const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
   const [articles, setArticles] = useState([]);
@@ -12,7 +11,13 @@ const NewsFeeds = ({ prevRef, nextRef, setBegin, setEnd, setInit }) => {
   useEffect(() => {
     const getArticles = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/");
+        const res = await axios.get("https://kalesanwa-server.vercel.app/", {
+          method: "GET",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json", // Include any headers needed for your request
+          },
+        });
         setArticles(res.data);
       } catch (error) {
         return <div className="text-white text-4xl">{error.message}</div>;
