@@ -50,4 +50,18 @@
   .input {
     @apply bg-gray py-3 rounded-lg outline-none text-sm px-3;
   }
+
+  .loader {
+    @apply w-[60px] h-[60px] max-md:w-[40px] max-md:h-[40px] border-[6px] border-gray border-b-secondary rounded-full box-border;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

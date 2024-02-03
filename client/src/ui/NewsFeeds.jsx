@@ -14,13 +14,18 @@ const NewsFeeds = ({
   articles,
   setArticles,
 }) => {
+  const [isLoading, setLoading] = useState(false);
   useEffect(() => {
     const getArticles = async () => {
       try {
+        setLoading(true);
         const res = await axios.get("https://kalesanwa-server.vercel.app/");
         setArticles(res.data);
+        setLoading(false);
       } catch (error) {
-        return <div className="text-white text-4xl">{error.message}</div>;
+        //? *****************************Find solution to this error
+        console.log(error.message);
+        setLoading(false);
       }
     };
     getArticles();
@@ -39,6 +44,8 @@ const NewsFeeds = ({
     let articleDate = new Date(date).toLocaleDateString("en-NG", formatted);
     return articleDate;
   }
+
+  if (isLoading) return <div class=" loader mx-auto"></div>;
 
   return (
     <Swiper
