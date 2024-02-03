@@ -85,7 +85,6 @@ const Committee = () => {
             </Swiper>
           </div>
         </div>
-        ``
       </div>
     </div>
   );

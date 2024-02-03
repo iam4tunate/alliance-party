@@ -5,7 +5,7 @@ import LOGO from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary h-[20rem] max-md:h-[25rem] max-sm:h-[30rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
+    <footer className="bg-primary h-[15rem] max-md:h-[20rem] max-sm:h-[25rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
       <div className="w-full maxW padX grid grid-cols-[1fr_4fr] max-sm:grid-cols-1 items-center gap-x-12 gap-y-12">
         <div className="space-y-2">
           <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
@@ -17,25 +17,16 @@ const Footer = () => {
         </div>
         <div className="flex max-lg:flex-wrap gap-x-10 gap-y-6 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
           <div className="flex items-center gap-x-2">
-            <IoLocationSharp className="text-3xl text-secondary max-md:text-2xl" />
-            <span>
-              22 Obafemi Awolowo Rd,
-              <br /> Ado-Ekiti, Nigeria
-            </span>
+            <IoLocationSharp className="text-2xl text-secondary max-md:text-2xl" />
+            <span>Akure, Ado-Ekiti, Nigeria</span>
           </div>
           <div className="flex items-center gap-x-2">
-            <FaPhone className="text-3xl text-secondary max-md:text-2xl" />
-            <div className="flex flex-col">
-              <span className="">+123 9608224266</span>
-              <span className="">+123 9608224266</span>
-            </div>
+            <FaPhone className="text-2xl text-secondary max-md:text-2xl" />
+            <span className="">+123 0000000000</span>
           </div>
           <div className="flex items-center gap-x-2">
-            <IoMail className="text-3xl text-secondary max-md:text-2xl" />
-            <div className="flex flex-col">
-              <span className="">kalesanwa.com.com</span>
-              <span className="">kalesanwa@mail.org</span>
-            </div>
+            <IoMail className="text-2xl text-secondary max-md:text-2xl" />
+            <span className="">kalesanwa@mail.org</span>
           </div>
         </div>
         {/* <div className="flex items-center text-gray text-4xl gap-x-4">
@@ -59,11 +50,9 @@ const Footer = () => {
         </div> */}
       </div>
       <hr className="text-gray opacity-20 my-10" />
-      <div className="flex flex-col gap-y-1 items-center justify-center text-gray text-center opacity-80 text-sm py-6 padX absolute bottom-0 left-0 right-0">
-        <span className="">
-          2024 © kálésanwá Group - Nigeria.
-        </span>
-        <span> Designed by CubeHub (08012345678)</span>
+      <div className="flex flex-col gap-y-1 items-center justify-center text-gray text-center opacity-80 text-sm py-6 padX absolute bottom-0 left-0 right-0 font-Heebo400">
+        <span className="">2024 © kálésanwá Group - Ondo, Nigeria.</span>
+        <span>Designed by I-CUBE WA LIMITED. info@cuberoupng.com</span>
       </div>
     </footer>
   );

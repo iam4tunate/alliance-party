@@ -56,37 +56,37 @@ export const COMMITTEES = [
   {
     id: 1,
     // img: COMMITTEE1,
-    name: "Barr. Julius Abure",
+    // name: "Barr. Julius Abure",
     position: "National Chairman",
   },
   {
     id: 2,
     // img: COMMITTEE2,
-    name: "Hon. Umar Faruk Ibrahim",
+    // name: "Hon. Umar Faruk Ibrahim",
     position: "National Secetary",
   },
   {
     id: 3,
     // img: COMMITTEE3,
-    name: "Comr. Ladi Iliya",
+    // name: "Comr. Ladi Iliya",
     position: "Deputy National Chairman",
   },
   {
     id: 4,
     // img: COMMITTEE5,
-    name: "Clement Ojukwu",
+    // name: "Clement Ojukwu",
     position: "National Organizing Secetary",
   },
   {
     id: 5,
     // img: COMMITTEE6,
-    name: "Oluchukwu Oparah",
+    // name: "Oluchukwu Oparah",
     position: "National Treasure",
   },
   {
     id: 6,
     // img: COMMITTEE4,
-    name: "Dudu Mamman Manuga",
+    // name: "Dudu Mamman Manuga",
     position: "National Women Leader",
   },
 ];
