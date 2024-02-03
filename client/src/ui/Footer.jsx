@@ -52,7 +52,7 @@ const Footer = () => {
       <hr className="text-gray opacity-20 my-10" />
       <div className="flex flex-col gap-y-1 items-center justify-center text-gray text-center opacity-80 text-sm py-6 padX absolute bottom-0 left-0 right-0 font-Heebo400">
         <span className="">2024 © kálésanwá Group - Ondo, Nigeria.</span>
-        <span>Designed by I-CUBE WA LIMITED. info@cuberoupng.com</span>
+        <span>Designed by I-CUBE WA LIMITED. info@cubegroupng.com</span>
       </div>
     </footer>
   );
