@@ -15,7 +15,8 @@ const parse = async (url) => {
 parse(feedURL);
 
 let app = express();
-app.use(cors(), "/", (req, res) => {
+app.use(cors());
+app.use("/", (req, res) => {
   res.send(articles);
 });
 
