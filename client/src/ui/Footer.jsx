@@ -5,7 +5,7 @@ import LOGO from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary h-[15rem] max-md:h-[20rem] max-sm:h-[25rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
+    <footer className="bg-primary h-[15rem] max-sm:h-[30rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
       <div className="w-full maxW padX grid grid-cols-[1fr_4fr] max-sm:grid-cols-1 items-center gap-x-12 gap-y-12">
         <div className="space-y-2">
           <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
