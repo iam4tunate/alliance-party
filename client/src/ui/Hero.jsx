@@ -13,7 +13,6 @@ const Hero = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [articles, setArticles] = useState([]);
-
   return (
     <div className="relative bg-primary h-[35rem] max-lg:h-full max-lg:pb-16">
       <div className="flex items-center justify-between max-lg:flex-col max-lg:gap-y-16 max-w-screen-2xl max-2xl:ml-auto 2xl:mx-auto 2xl:padX max-lg:px-0 lg:pl-10 max-lg:padX h-full">

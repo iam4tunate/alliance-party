@@ -4,7 +4,7 @@ import { IoFlag } from "react-icons/io5";
 const Commitment = () => {
   return (
     <div id="commitment" className="bg-white">
-      <div className="py-20 max-sm:py-16 maxW padX grid grid-cols-2 max-lg:grid-cols-1 gap-x-12 gap-y-8">
+      <div className="py-20 max-sm:py-16 pt-16 maxW padX grid grid-cols-2 max-lg:grid-cols-1 gap-x-12 gap-y-8">
         <div className="col-start-1 col-end-2 space-y-3">
           <div className="bg-primary text-white col-start-2 col-end-3 max-lg:col-start-1 max-lg:col-end-2 py-6 px-4 max-sm:px-2 h-fit">
             <span className="font-DMSefif text-3xl">Mission</span>

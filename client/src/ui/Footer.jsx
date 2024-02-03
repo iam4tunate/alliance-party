@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex max-lg:flex-wrap gap-x-10 gap-y-6 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
           <div className="flex items-center gap-x-2">
             <IoLocationSharp className="text-2xl text-secondary max-md:text-2xl" />
-            <span>Akure, Ado-Ekiti, Nigeria</span>
+            <span>Akure Ondo, Nigeria</span>
           </div>
           <div className="flex items-center gap-x-2">
             <FaPhone className="text-2xl text-secondary max-md:text-2xl" />

@@ -12,7 +12,7 @@ const Committee = () => {
   const [_, setInit] = useState();
   const [isBegin, setIsBegin] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const prevRef = useRef(null);
+const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
     <div id="committee" className="bg-white">
