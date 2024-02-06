@@ -35,22 +35,6 @@ const NewsFeeds = ({
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   const getArticles = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const res = await axios.get("https://kalesanwa-server.vercel.app/");
-  //       setArticles(res.data);
-  //       setLoading(false);
-  //     } catch (error) {
-  //       //? *****************************Find solution to this error
-  //       console.log(error.message);
-  //       // setLoading(false);
-  //     }
-  //   };
-  //   getArticles();
-  // }, []);
-
   function extractSRC(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
@@ -65,7 +49,7 @@ const NewsFeeds = ({
     return articleDate;
   }
 
-  if (isLoading) return <div className=" loader mx-auto"></div>;
+  if (isLoading) return <div className="loader mx-auto"></div>;
 
   return (
     <div className="relative">
