@@ -25,16 +25,16 @@ const NewsFeeds = ({
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        setArticles(response);
-        setLoading(false);
+        const result = await response.json()
+        setArticles(result)
+        setLoading(false)
       } catch (error) {
-        setError(error.message);
+        console.log(error.message);
       }
     };
-
     fetchData();
   }, []);
-  console.log(articles);
+
   function extractSRC(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
@@ -49,11 +49,11 @@ const NewsFeeds = ({
     return articleDate;
   }
 
-  if (isLoading) return <div className="loader mx-auto"></div>;
+  if (isLoading) return <div className=" loader mx-auto"></div>;
 
   return (
     <div className="relative">
-      {articles?.length > 0 && (
+      {articles && articles.length > 0 && (
         <div className="absolute top-0 left-0 bg-dark z-20 py-1.5 px-3.5 bg-opacity-70 w-fit">
           <span className="font-DMSefif text-xl max-md:text-lg text-gray uppercase">
             News feeds
