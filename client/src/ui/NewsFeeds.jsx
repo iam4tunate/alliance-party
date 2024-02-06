@@ -26,6 +26,7 @@ const NewsFeeds = ({
           throw new Error("Network response was not ok");
         }
         setArticles(response);
+        setLoading(false);
       } catch (error) {
         setError(error.message);
       }
@@ -33,6 +34,22 @@ const NewsFeeds = ({
 
     fetchData();
   }, []);
+
+  // useEffect(() => {
+  //   const getArticles = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const res = await axios.get("https://kalesanwa-server.vercel.app/");
+  //       setArticles(res.data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       //? *****************************Find solution to this error
+  //       console.log(error.message);
+  //       // setLoading(false);
+  //     }
+  //   };
+  //   getArticles();
+  // }, []);
 
   function extractSRC(htmlString) {
     const parser = new DOMParser();
