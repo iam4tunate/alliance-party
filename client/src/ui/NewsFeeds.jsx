@@ -14,22 +14,22 @@ const NewsFeeds = ({
   articles,
   setArticles,
 }) => {
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true);
         const response = await fetch("https://kalesanwa-server.vercel.app/");
         // Check if the request was successful (status code 200-299)
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const result = await response.json()
-        setArticles(result)
-        setLoading(false)
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
+        const result = await response.json();
+        setArticles(result);
       } catch (error) {
         console.log(error.message);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();

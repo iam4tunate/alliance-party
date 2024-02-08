@@ -9,7 +9,7 @@ const Members = () => {
       </div>
       <div className="bg-white rounded-md shadow-md py-4 px-3 overflow-x-scroll w-full">
         <table className="">
-          <thead className="grid text-sm grid-cols-[6rem_4rem_7rem_4rem_4rem_9rem_5rem_5rem_5rem_5rem_5rem] gap-x-8 pb-4">
+          <thead className="grid text-sm grid-cols-[6rem_4rem_7rem_4rem_4rem_9rem_5rem_5rem_5rem_5rem_5rem] gap-x-8 pb-4 text-left">
             <th>Member ID</th>
             <th>Image</th>
             <th>Name</th>
@@ -28,7 +28,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -49,7 +49,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -70,7 +70,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -91,7 +91,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -112,7 +112,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -133,7 +133,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
@@ -154,7 +154,7 @@ const Members = () => {
               <img
                 src={PASSPORT}
                 alt="member"
-                className="rounded-full w-14 h-14 object-cover"
+                className="rounded-full w-10 h-10 object-cover"
               />
             </td>
             <td>
