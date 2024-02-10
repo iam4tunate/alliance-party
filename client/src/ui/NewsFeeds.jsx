@@ -41,7 +41,6 @@ const NewsFeeds = ({
         const apiUrl = "https://kalesanwa-server.vercel.app/";
         const response = await axios.get(apiUrl);
         setArticles(response.data);
-        console.log(response.data);
         setLoading(false)
       } catch (error) {
         console.error("There was a problem with the Axios request:", error);
