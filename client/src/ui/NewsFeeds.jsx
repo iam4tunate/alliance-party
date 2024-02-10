@@ -16,20 +16,34 @@ const NewsFeeds = ({
 }) => {
   const [isLoading, setLoading] = useState(true);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("https://kalesanwa-server.vercel.app/");
+  //       // Check if the request was successful (status code 200-299)
+  //       // if (!response.ok) {
+  //       //   throw new Error("Network response was not ok");
+  //       // }
+  //       const result = await response.json();
+  //       setArticles(result);
+  //     } catch (error) {
+  //       console.log(error.message);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://kalesanwa-server.vercel.app/");
-        // Check if the request was successful (status code 200-299)
-        // if (!response.ok) {
-        //   throw new Error("Network response was not ok");
-        // }
-        const result = await response.json();
-        setArticles(result);
+        const apiUrl = "https://kalesanwa-server.vercel.app/";
+        const response = await axios.get(apiUrl);
+        setArticles(response);
+        console.log(response);
       } catch (error) {
-        console.log(error.message);
-      } finally {
-        setLoading(false);
+        console.error("There was a problem with the Axios request:", error);
       }
     };
     fetchData();
@@ -38,7 +52,6 @@ const NewsFeeds = ({
   function extractSRC(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
-    // Extract the src attribute value
     const srcValue = doc.querySelector("img").getAttribute("src");
     return srcValue;
   }

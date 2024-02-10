@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 const Home = () => {
   return (
     <div>
-      <div className="relative z-10 mb-[15rem] max-sm:mb-[30rem]">
+      <div className="relative z-10 mb-[17rem] max-lg:mb-[20rem] max-md:mb-[22rem] max-sm:mb-[33rem]">
         <Navbar />
         <Hero />
         <Commitment />

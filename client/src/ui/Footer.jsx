@@ -5,53 +5,46 @@ import LOGO from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary h-[15rem] max-sm:h-[30rem] flex flex-col justify-center fixed bottom-0 left-0 right-0">
-      <div className="w-full maxW padX grid grid-cols-[1fr_4fr] max-sm:grid-cols-1 items-center gap-x-12 gap-y-12">
-        <div className="space-y-2">
-          <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
-          <div className="flex items-center text-gray opacity-80 text-3xl gap-x-4">
+    <footer className="bg-primary h-[17rem] max-lg:h-[20rem] max-md:h-[22rem] max-sm:h-[33rem] flex flex-col gap-y-12 justify-between pt-12 fixed bottom-0 left-0 right-0">
+      <div className="w-full maxW padX grid grid-cols-[min-content_1fr] max-sm:grid-cols-1 gap-x-12 gap-y-12">
+        <div className="space-y-3.5">
+          <div className="flex flex-col">
+            <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
+            <span className="text-lg font-DMSefif text-white italic">
+              j' òwûrò lo
+            </span>
+          </div>
+          <div className="flex items-center text-gray opacity-80 text-2xl gap-x-4">
             <RiFacebookCircleLine />
             <RiTwitterLine />
             <IoLogoWhatsapp />
           </div>
         </div>
-        <div className="flex max-lg:flex-wrap gap-x-10 gap-y-6 items-center justify-between text-gray max-md:text-lg max-sm:text-base">
-          <div className="flex items-center gap-x-2">
-            <IoLocationSharp className="text-2xl text-secondary max-md:text-2xl" />
-            <span>Akure Ondo, Nigeria</span>
+        <div className="flex flex-wrap items-center justify-between gap-x-12 gap-y-6 text-gray text-lg">
+          <div className="flex items-center gap-x-2.5">
+            <IoLocationSharp className="text-3xl text-secondary max-md:text-2xl" />
+            <span>
+              Plot 1, Ala GRA <br /> Akure
+            </span>
           </div>
-          <div className="flex items-center gap-x-2">
-            <FaPhone className="text-2xl text-secondary max-md:text-2xl" />
-            <span className="">+123 0000000000</span>
+          <div className="flex items-center gap-x-2.5">
+            <FaPhone className="text-3xl text-secondary max-md:text-2xl" />
+            <div className="flex flex-col">
+              <span className="">Ondo North +234 703 472 1313</span>
+              <span className="">Ondo Central +234 803 379 3991</span>
+            </div>
           </div>
-          <div className="flex items-center gap-x-2">
-            <IoMail className="text-2xl text-secondary max-md:text-2xl" />
-            <span className="">kalesanwa@mail.org</span>
+          <div className="flex items-center gap-x-2.5">
+            <IoMail className="text-3xl text-secondary max-md:text-2xl" />
+            <div className="flex flex-col">
+              <span className="">Ondo South +234 812 024 7554</span>
+              <span className="">State Liaison- 07080780513</span>
+            </div>
           </div>
         </div>
-        {/* <div className="flex items-center text-gray text-4xl gap-x-4">
-          <RiFacebookCircleLine />
-          <RiTwitterLine />
-          <IoLogoWhatsapp />
-        </div> */}
-        {/* <div className="text-gray flex items-start gap-x-28">
-          <div className="flex flex-col text-base gap-y-2">
-            <span className="font-Heebo500">Open Hours</span>
-            <span className="opacity-90">Mon - Sat: 8am - 5pm</span>
-            <span className="opacity-90">Sunday: Closed</span>
-          </div>
-          <div className="flex flex-col text-base gap-y-3">
-            <span className="font-Heebo500">Useful Links</span>
-            <span className="opacity-90 font-Heebo300 underline">Vision & Mission</span>
-            <span className="opacity-90 font-Heebo300 underline">Our Committee</span>
-            <span className="opacity-90 font-Heebo300 underline">Upcoming Events</span>
-            <span className="opacity-90 font-Heebo300 underline">Become a member</span>
-          </div>
-        </div> */}
       </div>
-      <hr className="text-gray opacity-20 my-10" />
       <div className="flex flex-col gap-y-1 items-center justify-center text-gray text-center opacity-80 text-sm py-6 padX absolute bottom-0 left-0 right-0 font-Heebo400">
-        <span className="">2024 © kálésanwá Group - Ondo, Nigeria.</span>
+        <span className="">2024 © kálésanwá Group - Akure, Nigeria.</span>
         <span>Designed by I-CUBE WA LIMITED. info@cubegroupng.com</span>
       </div>
     </footer>
