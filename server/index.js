@@ -7,7 +7,7 @@ let articles = [];
 
 (async () => {
   let feed = await parser.parseURL(
-    "https://www.channelstv.com/search/APC/feed/rss2/"
+    "https://www.premiumtimesng.com/tag/all-progressives-congress-apc/feed"
   );
   feed.items.forEach((item) => {
     articles.push({ item });
