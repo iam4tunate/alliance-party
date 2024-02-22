@@ -14,12 +14,10 @@ let articles = [];
   });
 })();
 
-let app = express();
+const app = express();
 app.use(cors());
 app.get("/", (req, res) => {
   res.send(articles);
 });
 
 app.listen(4000);
-
-module.exports = app
