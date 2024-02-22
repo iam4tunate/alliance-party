@@ -15,9 +15,10 @@ export default {
         primary: "#1B4D3E",
         secondary: "#A91F20",
         gray: "#F2F2F2",
-        dark: "#1f1f1f",
+        dark: "#4C4C4C",
       },
     },
   },
+  // eslint-disable-next-line no-undef
   plugins: [require('tailwind-scrollbar-hide')],
 };

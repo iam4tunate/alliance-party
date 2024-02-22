@@ -1,7 +1,6 @@
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationSharp, IoLogoWhatsapp, IoMail } from "react-icons/io5";
 import { RiFacebookCircleLine, RiTwitterLine } from "react-icons/ri";
-import LOGO from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
@@ -9,9 +8,9 @@ const Footer = () => {
       <div className="w-full maxW padX grid grid-cols-[min-content_1fr] max-sm:grid-cols-1 gap-x-12 gap-y-12">
         <div className="space-y-3.5">
           <div className="flex flex-col">
-            <div className="text-3xl font-DMSefif text-white">kálésanwá.</div>
+            <div className="text-3xl font-DMSefif text-white">kálésanwá</div>
             <span className="text-lg font-DMSefif text-white italic">
-              j' òwûrò lo
+              j&apos; òwûrò lo
             </span>
           </div>
           <div className="flex items-center text-gray opacity-80 text-2xl gap-x-4">

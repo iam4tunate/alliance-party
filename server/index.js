@@ -16,8 +16,10 @@ let articles = [];
 
 let app = express();
 app.use(cors());
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send(articles);
 });
 
 app.listen(4000);
+
+module.exports = app

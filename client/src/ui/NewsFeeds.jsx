@@ -16,38 +16,38 @@ const NewsFeeds = ({
 }) => {
   const [isLoading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch("https://kalesanwa-server.vercel.app/");
-  //       // Check if the request was successful (status code 200-299)
-  //       // if (!response.ok) {
-  //       //   throw new Error("Network response was not ok");
-  //       // }
-  //       const result = await response.json();
-  //       setArticles(result);
-  //     } catch (error) {
-  //       console.log(error.message);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = "https://kalesanwa-server.vercel.app/";
-        const response = await axios.get(apiUrl);
-        setArticles(response.data);
-        setLoading(false)
+        const response = await fetch("https://kalesanwa-server.vercel.app/");
+        // Check if the request was successful (status code 200-299)
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
+        const result = await response.json();
+        setArticles(result);
       } catch (error) {
-        console.error("There was a problem with the Axios request:", error);
+        console.log(error.message);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
-  }, []);
+  }, [setArticles]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const apiUrl = "https://kalesanwa-server.vercel.app/";
+  //       const response = await axios.get(apiUrl);
+  //       setArticles(response.data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("There was a problem with the Axios request:", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, [setArticles]);
 
   function extractSRC(htmlString) {
     const parser = new DOMParser();
